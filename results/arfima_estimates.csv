@@ -1,0 +1,2 @@
+Site_ID	Ecosystem	mu	SE_mu	CI_lower	CI_upper	Method	Converged
+CORAL_001	coral_reef	0.637	0.065	0.51	0.764	ARFIMA	True
