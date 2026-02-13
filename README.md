@@ -2,14 +2,14 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![R](https://img.shields.io/badge/R-4.3.1+-blue.svg)](https://www.r-project.org/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18635902.svg)](https://doi.org/10.5281/zenodo.18635902)
 
 Companion repository for PNAS submission: "Ecological Memory Generates Scale-Dependent Hysteresis in Complex Ecosystems" by Sam Adeyemi.
 
 ## 📄 Citation
 
 Adeyemi, S. (2026). Ecological Memory Generates Scale-Dependent Hysteresis
-in Complex Ecosystems. Proceedings of the National Academy of Sciences.
-(In review)
+in Complex Ecosystems. Zenodo. https://doi.org/10.5281/zenodo.18635902
 
 
 
@@ -41,7 +41,6 @@ This repository contains complete data and reproducible code for quantifying eco
 
 ### R Packages
 ```r
-# Install required packages
 install.packages(c(
   "ggplot2",      # Visualization
   "dplyr",        # Data manipulation
@@ -69,11 +68,13 @@ source("code/generate_si_figures.R")
 source("code/generate_additional_si_figures.R")
 📊 Data Description
 Site Metadata (data/site_metadata.csv)
+
 Columns: Site_ID, Ecosystem, Location, Lat, Lon, Start_Year, End_Year, n_obs
 
 n = 84: 72 regime-shifting + 12 stable LTER sites
 
 Time Series Data (data/[ecosystem]/site_XXX.csv)
+
 Columns: Date, State_Variable, Environmental_Forcing, Disturbance
 
 State variables:
@@ -85,6 +86,7 @@ Savannahs: Woody vegetation cover (%)
 Lakes: Chlorophyll-a (μg/L)
 
 Analysis Results
+
 arfima_estimates.csv - Memory parameters (μ, SE, CI)
 
 hysteresis_measures.csv - Irreversibility Index (ℐ) per site
@@ -122,19 +124,18 @@ Figure 4: Restoration applications (7.0 × 5.5 in)
 
 Supplementary Figures (29):
 
-S1.1-S1.9: Individual site time series
+S1.1–S1.9: Individual site time series
 
-S2.1-S2.3: Diagnostics and verification
+S2.1–S2.3: Diagnostics and verification
 
-S3.1-S3.10: Surrogate test distributions
+S3.1–S3.10: Surrogate test distributions
 
 S4.1, S4.5: LTER comparisons and classification
 
-S5.1-S5.5: Restoration economics
+S5.1–S5.5: Restoration economics
 
 🔬 Reproducibility
 Full Replication
-To reproduce all analyses from scratch:
 
 r
 # 1. Estimate memory parameters
@@ -149,11 +150,9 @@ source("code/generate_si_figures.R")
 source("code/generate_additional_si_figures.R")
 Computational requirements:
 
-Time: ~2-3 hours (full analysis pipeline)
+Time: ~2–3 hours (full analysis pipeline)
 
 Memory: ~8 GB RAM recommended
-
-Parallel processing: Optional (speeds up surrogate tests)
 
 📖 Documentation
 Installation guide: See docs/installation.md
@@ -167,9 +166,7 @@ This project is licensed under the MIT License - see LICENSE file for details.
 
 👤 Author
 Sam Adeyemi
-
 Email: samoadeyemi@yahoo.co.uk
-
 GitHub: @SamAde1203
 
 🙏 Acknowledgments
@@ -184,4 +181,8 @@ Lakes: North Temperate Lakes LTER
 Stable sites: NSF Long-Term Ecological Research Network
 
 📧 Contact
-For questions about the code or data, please open an issue or contact samoadeyemi@yahoo.co.uk.
+Open an issue or email samoadeyemi@yahoo.co.uk.
+
+
+
+
